@@ -4,10 +4,9 @@ language: php
 # list any PHP version you want to test against
 php:
   - 5.3
-  # aliased to a recent 5.4.x version
   - 5.4
 
-# optionally specify a list of environments, for example to test different RDBMS
+# optionally specify a list of environments
 env:
   - DB=mysql
 
@@ -16,7 +15,6 @@ before_script:
   - if [[ "$DB" == "mysql" ]]; then mysql -e "create database IF NOT EXISTS my_db;" -uroot; fi
 
 # omitting "script:" will default to phpunit
-# use the $DB env variable to determine the phpunit.xml to use
 script: phpunit --configuration phpunit.xml --coverage-text
 
 # configure notifications (email, IRC, campfire etc)
