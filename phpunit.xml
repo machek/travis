@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         stopOnFailure="true" bootstrap="./tests/bootstrap.php">
+  <testsuites>
+		<testsuite name="application">
+			<directory>tests</directory>
+		</testsuite>
+  </testsuites>
+</phpunit>
