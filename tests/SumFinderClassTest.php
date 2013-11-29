@@ -5,7 +5,7 @@ Class SumFinderClassTest  extends PHPUnit_Framework_TestCase{
     public function testFindSum(){
 
         $input = array(0, 1, 2, 3, 6, 7, 8, 9, 11, 12, 14);
-        $result = array('group'=>'6, 7, 8, 9', 'sum'=> 35);
+        $result = array('group'=>'6, 7, 8, 9', 'sum'=> 30);
 
         $sumFinder = new SumFinderClass($input);
         $this->assertEquals($result, $sumFinder->findSum());
