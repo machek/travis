@@ -14,7 +14,7 @@ Class SumFinderClassTest  extends PHPUnit_Framework_TestCase{
 
     public function testCompareArrays(){
 
-        $array1 = array(0,1,2,3);
+        $array1 = array(0,10,2,3);
         $array2 = array(6,7,8,9);
 
         $sumFinder = new SumFinderClass('');
