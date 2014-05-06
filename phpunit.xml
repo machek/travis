@@ -4,9 +4,9 @@
          convertWarningsToExceptions="true"
          stopOnFailure="true" bootstrap="./tests/bootstrap.php">
   <testsuites>
-		<testsuite name="application">
-			<directory>tests</directory>
-		</testsuite>
+	<testsuite name="application">
+		<directory>tests</directory>
+	</testsuite>
   </testsuites>
   <filter>
     <whitelist addUncoveredFilesFromWhitelist="true">
